@@ -1,11 +1,11 @@
 ---
-title: "Proposal title"
-subtitle: "Proposal"
+title: "Visualizing U.S. Mental Health Care Access During COVID-19"
+subtitle: "Final Project Proposal"
 author: 
   - name: "Adaria Blackwell"
     affiliations:
       - name: "College of Information Science, University of Arizona"
-description: "Project description"
+description: "An interactive data visualization exploring mental health care access by state and demographic group using the Household Pulse Survey dataset."
 format:
   html:
     code-tools: true
@@ -22,8 +22,7 @@ jupyter: python3
 ```{python}
 #| label: load-pkgs
 #| message: false
-import numpy as np
-import pandas as pd 
+import numpy as np 
 
 ```
 
@@ -32,6 +31,9 @@ import pandas as pd
 ```{python}
 #| label: load-dataset
 #| message: false
+#| echo: true
+
+import pandas as pd
 
 # Load CSV file
 mh_data = pd.read_csv("data/Mental_Health_Final_Project_data.csv")
