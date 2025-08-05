@@ -2,7 +2,7 @@
 title: "Proposal title"
 subtitle: "Proposal"
 author: 
-  - name: "Team Name - Team member 1, Team member 2,..."
+  - name: "Adaria Blackwell"
     affiliations:
       - name: "College of Information Science, University of Arizona"
 description: "Project description"
@@ -23,6 +23,8 @@ jupyter: python3
 #| label: load-pkgs
 #| message: false
 import numpy as np
+import pandas as pd 
+
 ```
 
 ## Dataset
@@ -30,16 +32,41 @@ import numpy as np
 ```{python}
 #| label: load-dataset
 #| message: false
+
+# Load CSV file
+mh_data = pd.read_csv("data/Mental_Health_Final_Project_data.csv")
+
 ```
+## Description 
+The dataset titled "Mental Health Care in the Last 4 Weeks" comes from the U.S. Census Bureau’s Household Pulse Survey
+and focuses on how many adults in the United States received mental health care—including therapy, counseling,
+or prescriptions—during the last four weeks at the time of survey collection. It includes state-level data and allows
+breakdowns by week, gender, and other demographic details. This information is especially useful for understanding
+how access to mental health care may have varied during the COVID-19 pandemic.
 
-A brief description of your dataset including its provenance, dimensions, etc. as well as the reason why you chose this dataset.
-
-Make sure to load the data and use inline code for some of this information.
+The file has {{ mh_data.shape[0] }} rows and {{ mh_data.shape[1] }} columns. Some key columns include state, week, group
+(e.g., gender or age category), value (estimate), and confidence intervals. I chose this dataset because it highlights
+mental health care access across the U.S. during a critical time and is structured well for visual comparisons across
+groups and over time.
 
 ## Questions
 
-The two questions you want to answer.
+1. Which U.S. states had the highest and lowest rates of adults receiving mental health care during the COVID-19 
+pandemic period captured in this dataset?
+
+2. How did access to mental health care differ between demographic groups—such as men and women—over the course of 
+the survey weeks?
+
+
 
 ## Analysis plan
 
--   A plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).
+To start the project, I will clean the dataset by handling any missing values and checking for consistent formats
+in columns like week, state, and group. I’ll then explore the data by grouping it based on demographic and geographic
+categories to understand how mental health care access changed over time and across regions.
+
+For analysis, I plan to generate bar charts comparing state-level access to care, as well as line graphs to show trends
+over time for different demographic groups (e.g., comparing mental health care access between men and women week by week).
+After exploring these trends, I’ll develop an interactive dashboard using Streamlit or Plotly Express that allows users
+to select specific weeks, groups, or states and view custom visualizations. This tool will make the data easy to explore 
+and help reveal key differences and changes in access to care.
