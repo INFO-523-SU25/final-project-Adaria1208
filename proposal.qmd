@@ -23,7 +23,7 @@ jupyter: python3
 #| label: load-pkgs
 #| message: false
 import numpy as np 
-
+import pandas as pd
 ```
 
 ## Dataset
@@ -33,11 +33,8 @@ import numpy as np
 #| message: false
 #| echo: true
 
-import pandas as pd
-
 # Load CSV file
 mh_data = pd.read_csv("data/Mental_Health_Final_Project_data.csv")
-
 ```
 ## Description 
 The dataset titled "Mental Health Care in the Last 4 Weeks" comes from the U.S. Census Bureau’s Household Pulse Survey
