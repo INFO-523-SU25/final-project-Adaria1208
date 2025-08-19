@@ -1,13 +1,13 @@
 ---
-title: "Project Title"
+title: "Mental Health Dashboard"
 subtitle: "INFO 523 - Final Project"
 author: 
-  - name: "Team name - Team member 1, Team member 2,..."
+  - name: "Adaria Blackwell"
     affiliations:
       - name: "College of Information Science, University of Arizona"
-description: "Project description"
+description: "An interactive dashboard built with Streamlit to explore mental health care access across states and demographics during COVID-19 using U.S. Census Household Pulse Survey data."
 format:
-   html:
+  html:
     code-tools: true
     code-overflow: wrap
     embed-resources: true
@@ -20,4 +20,14 @@ jupyter: python3
 
 ## Abstract
 
-Add project abstract here.
+This project investigates how access to mental health care in the past 4 weeks varied by state, gender, and time during the COVID-19 pandemic. Using the U.S. Census Bureau’s Household Pulse Survey, I created an interactive dashboard to visualize trends and differences in mental health care receipt, providing insights to guide public health policy and outreach.
+
+## Dashboard Link
+
+👉 [Launch Dashboard](https://fictional-waddle-7vx97qvjv65vhr5p9-8503.app.github.dev/)
+
+## Key Questions
+
+1. Did mental health care access change across different time periods during the pandemic?
+2. Were there noticeable differences in access across gender and geographic location?
+
