@@ -18,12 +18,10 @@ execute:
 ---
 ## Presentation PDF
 
-You can view my final project presentation slides below:
-
-<iframe src="data/Mental%20Health%20vs%20COVID-19.pdf" width="100%" height="600px" style="border: none;"></iframe>
-
-[Download the presentation as PDF](data/Mental%20Health%20vs%20COVID-19.pdf)
-
+You can view my final project presentation slides in the data folder!
+ 
 ## Presentation Video
 
 You can view my final project presentation video below:
+
+https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6928f02b-7126-4c66-8b32-b33f0173a7b3
