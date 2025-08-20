@@ -1,0 +1,78 @@
+---
+title: "Mental Health Care Access During COVID-19"
+author: "Adaria Blackwell"
+format: html
+---
+
+# Introduction
+
+The COVID-19 pandemic deeply affected mental health across the United States, increasing the need for timely and accessible care. To explore this issue, this project investigates patterns in mental health care access during the pandemic using the U.S. Census Bureau Household Pulse Survey. The survey provides self-reported data on whether adults received mental health care in the past four weeks.
+
+This study uses a dashboard created with Streamlit to interactively examine how access to mental health care varied across different demographic groups, specifically by age and race/ethnicity, and how those trends changed across different time periods. Two core research questions guided this analysis:
+
+1. How did access to mental health care change across different age groups during the COVID-19 pandemic?
+2. Which racial or ethnic groups reported the highest or lowest access to mental health care during the pandemic?
+
+# Data and Methodology
+
+The data comes from the [U.S. Census Bureau’s Household Pulse Survey](https://data.gov), which includes responses from April 2020 through early 2022. The dataset includes columns for:
+
+- **Indicator**: Type of care measured (e.g., “Received mental health care in past 4 weeks”)
+- **Group/Subgroup**: The demographic category (e.g., age group, race/ethnicity)
+- **Time Period**: The survey had multiple dates
+- **Value**: The percentage of adults who reported receiving mental health care
+
+Using Python and the Streamlit framework, I created an interactive web-based dashboard that allows users to explore trends over time. The application allows filtering by group type (age, race/ethnicity, gender, etc.) and visualizes both time trends and subgroup averages.
+
+# Results
+
+## Research Question 1: Access by Age Group Over Time
+
+To answer the first research question, the dashboard was filtered by age group, with the following time periods selected:
+
+- Early Period: April 14 – April 26, 2021
+- Middle Period: August 19 – August 31, 2020
+- Late Period: December 29, 2021 – January 10, 2022
+
+The line chart in the dashboard revealed that all age groups showed an upward trend in mental health care access over time. Younger adults (18–29 years) consistently reported higher access to care compared to older age groups. In contrast, those aged 70 and above had significantly lower reported access, particularly in early time periods. This suggests that age played a significant role in perceived or actual access to mental health services during the pandemic.
+
+The average bar chart further confirmed that access was highest among the 18–29 age group and steadily declined with age.
+
+## Research Question 2: Access by Race/Ethnicity
+
+Originally, the second research question aimed to focus on differences by gender. However, the dashboard revealed that race/ethnicity data provided more insightful differences. As such, the focus was shifted to examine access by racial and ethnic identity.
+
+Filtering by "Race/Hispanic ethnicity" for selected late pandemic time periods (e.g., October–December 2021), the bar chart revealed:
+
+- Highest access: Non-Hispanic individuals identifying as “other races or multiple races” and non-Hispanic White individuals.
+- Lowest access: Non-Hispanic Asian and Non-Hispanic Black adults.
+
+This discrepancy highlights potential barriers related to cultural stigma, access to care in underserved communities, or systemic inequities in healthcare infrastructure.
+
+# Discussion
+
+The analysis shows that younger individuals were more likely to report receiving mental health care throughout the pandemic, possibly due to greater openness to seeking care or fewer logistical barriers.
+
+Meanwhile, the observed racial disparities raise concerns about equity. The lower rates among Non-Hispanic Black and Asian populations may reflect deeper systemic issues, such as cultural stigma and/or lack of access to culturally competent care.
+
+The dashboard empowers users to interactively explore these disparities and tailor visualizations based on interest, providing a flexible tool for future research.
+
+# Limitations and Future Directions
+
+While this project offers valuable insights, it has some limitations:
+
+- The dataset relies on self-reported responses, which may include biases.
+- The dashboard does not control for necessary variables like income, education, and insurance. These would help with a deeper research into question 2.
+- Gender was excluded from analysis due to unclear trends and overlapping subgroup categories.
+
+Future improvements could include:
+
+- Analyzing more recent data (2023–2025) if available
+- Incorporating statistical models
+- Adding more advanced visualizations or predictive models using machine learning
+
+# Conclusion
+
+This project demonstrated that mental health care access during the pandemic varied by age and race/ethnicity. Younger adults and non-Hispanic White and multiracial individuals had higher access, while older adults and certain racial minorities had less access. These patterns underscore the need for targeted mental health interventions and equity-focused public health strategies.
+
+By using interactive dashboards, complex data becomes accessible and understandable for a broader audience, from researchers to policymakers and even to the general public.
